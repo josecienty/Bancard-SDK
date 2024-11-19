@@ -1,5 +1,5 @@
 {
-    "name": "hds-solutions/bancard-sdk",
+    "name": "idesa/bancard-sdk",
     "description": "Bancard SDK library",
     "type": "library",
     "license": "GPL-3.0",
