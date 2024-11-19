@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Tests;
+namespace Idesa\Bancard\Tests;
 
 use Dotenv\Dotenv;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 

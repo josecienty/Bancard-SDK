@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses;
+namespace Idesa\Bancard\Responses;
 
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
 
 final class SingleBuyResponse extends Base\BancardResponse implements Contracts\SingleBuyResponse {
 

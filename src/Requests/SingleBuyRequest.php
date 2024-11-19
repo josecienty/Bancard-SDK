@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests;
+namespace Idesa\Bancard\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
-use HDSSolutions\Bancard\Models\PendingPayment;
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
-use HDSSolutions\Bancard\Responses\SingleBuyResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
+use Idesa\Bancard\Models\PendingPayment;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Responses\SingleBuyResponse;
 use RuntimeException;
 
 final class SingleBuyRequest extends Base\BancardRequest implements Contracts\SingleBuyRequest {

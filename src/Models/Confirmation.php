@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Models;
+namespace Idesa\Bancard\Models;
 
 final class Confirmation extends Base\Model {
 

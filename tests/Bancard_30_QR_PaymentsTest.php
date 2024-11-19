@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Tests;
+namespace Idesa\Bancard\Tests;
 
 use Exception;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Responses\QRGenerateResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Responses\QRGenerateResponse;
 use PHPUnit\Framework\TestCase;
 
 final class Bancard_30_QR_PaymentsTest extends TestCase {

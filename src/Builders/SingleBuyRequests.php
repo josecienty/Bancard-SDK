@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Builders;
+namespace Idesa\Bancard\Builders;
 
-use HDSSolutions\Bancard\Models\PendingPayment;
-use HDSSolutions\Bancard\Requests\SingleBuyRequest;
+use Idesa\Bancard\Models\PendingPayment;
+use Idesa\Bancard\Requests\SingleBuyRequest;
 
 trait SingleBuyRequests {
 

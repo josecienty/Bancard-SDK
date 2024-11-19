@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Services;
+namespace Idesa\Bancard\Services;
 
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Responses\CardDeleteResponse;
-use HDSSolutions\Bancard\Responses\CardsNewResponse;
-use HDSSolutions\Bancard\Responses\UsersCardsResponse;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Responses\CardDeleteResponse;
+use Idesa\Bancard\Responses\CardsNewResponse;
+use Idesa\Bancard\Responses\UsersCardsResponse;
 
 trait Cards {
 

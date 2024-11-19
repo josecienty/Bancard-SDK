@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Traits;
+namespace Idesa\Bancard\Traits;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\RequestOptions;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Builders;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Builders;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
 use RuntimeException;
 
 trait BuildsRequests {

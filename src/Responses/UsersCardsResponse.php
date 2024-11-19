@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses;
+namespace Idesa\Bancard\Responses;
 
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
 
 final class UsersCardsResponse extends Base\BancardResponse implements Contracts\UsersCardsResponse {
 

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Traits;
+namespace Idesa\Bancard\Traits;
 
-use HDSSolutions\Bancard\Services;
+use Idesa\Bancard\Services;
 
 trait HasServices {
     use Services\SingleBuy;

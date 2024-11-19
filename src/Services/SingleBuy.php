@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Services;
+namespace Idesa\Bancard\Services;
 
-use HDSSolutions\Bancard\Responses\SingleBuyResponse;
+use Idesa\Bancard\Responses\SingleBuyResponse;
 
 trait SingleBuy {
 

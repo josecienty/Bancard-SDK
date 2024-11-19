@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests;
+namespace Idesa\Bancard\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
-use HDSSolutions\Bancard\Responses\QRRevertResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Responses\QRRevertResponse;
 
 final class QRRevertRequest extends Base\BancardRequest implements Contracts\QRRevertRequest {
 

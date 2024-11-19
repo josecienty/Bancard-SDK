@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Traits;
+namespace Idesa\Bancard\Traits;
 
 trait ManagesCredentials {
 

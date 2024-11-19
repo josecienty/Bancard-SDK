@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Tests;
+namespace Idesa\Bancard\Tests;
 
 use Exception;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Models\Confirmation;
-use HDSSolutions\Bancard\Models\Currency;
-use HDSSolutions\Bancard\Requests\ChargeRequest;
-use HDSSolutions\Bancard\Responses\CardDeleteResponse;
-use HDSSolutions\Bancard\Responses\Contracts\ConfirmationResponse;
-use HDSSolutions\Bancard\Responses\Contracts\RollbackResponse;
-use HDSSolutions\Bancard\Responses\Contracts\UsersCardsResponse;
-use HDSSolutions\Bancard\Responses\Contracts\ChargeResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Models\Confirmation;
+use Idesa\Bancard\Models\Currency;
+use Idesa\Bancard\Requests\ChargeRequest;
+use Idesa\Bancard\Responses\CardDeleteResponse;
+use Idesa\Bancard\Responses\Contracts\ConfirmationResponse;
+use Idesa\Bancard\Responses\Contracts\RollbackResponse;
+use Idesa\Bancard\Responses\Contracts\UsersCardsResponse;
+use Idesa\Bancard\Responses\Contracts\ChargeResponse;
 use PHPUnit\Framework\TestCase;
 
 final class Bancard_20_UsersCardsTests extends TestCase {

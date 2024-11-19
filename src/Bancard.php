@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard;
+namespace Idesa\Bancard;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
-use HDSSolutions\Bancard\Requests\Base\BancardRequest;
-use HDSSolutions\Bancard\Traits\BuildsRequests;
-use HDSSolutions\Bancard\Traits\HasServices;
-use HDSSolutions\Bancard\Traits\ManagesCredentials;
+use Idesa\Bancard\Requests\Base\BancardRequest;
+use Idesa\Bancard\Traits\BuildsRequests;
+use Idesa\Bancard\Traits\HasServices;
+use Idesa\Bancard\Traits\ManagesCredentials;
 use Psr\Http\Message\RequestInterface;
 
 final class Bancard {

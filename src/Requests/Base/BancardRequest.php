@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests\Base;
+namespace Idesa\Bancard\Requests\Base;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Requests\Contracts;
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Requests\Contracts;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 use RuntimeException;

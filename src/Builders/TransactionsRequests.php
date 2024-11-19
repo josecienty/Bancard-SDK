@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Builders;
+namespace Idesa\Bancard\Builders;
 
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Requests\ChargeRequest;
-use HDSSolutions\Bancard\Requests\ConfirmationRequest;
-use HDSSolutions\Bancard\Requests\PreauthorizationConfirmRequest;
-use HDSSolutions\Bancard\Requests\RollbackRequest;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Requests\ChargeRequest;
+use Idesa\Bancard\Requests\ConfirmationRequest;
+use Idesa\Bancard\Requests\PreauthorizationConfirmRequest;
+use Idesa\Bancard\Requests\RollbackRequest;
 
 trait TransactionsRequests {
 

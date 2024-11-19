@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Tests;
+namespace Idesa\Bancard\Tests;
 
 use Exception;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
-use HDSSolutions\Bancard\Requests\SingleBuyRequest;
-use HDSSolutions\Bancard\Responses\Contracts\SingleBuyResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
+use Idesa\Bancard\Requests\SingleBuyRequest;
+use Idesa\Bancard\Responses\Contracts\SingleBuyResponse;
 use PHPUnit\Framework\TestCase;
 
 final class Bancard_10_SingleBuyZimpleTests extends TestCase {

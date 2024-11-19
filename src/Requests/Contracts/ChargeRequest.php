@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests\Contracts;
+namespace Idesa\Bancard\Requests\Contracts;
 
-use HDSSolutions\Bancard\Models\Card;
+use Idesa\Bancard\Models\Card;
 
 /**
  * @property int $shop_process_id

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Contracts;
+namespace Idesa\Bancard\Responses\Contracts;
 
-use HDSSolutions\Bancard\Models\Confirmation;
+use Idesa\Bancard\Models\Confirmation;
 
 interface ChargeResponse extends BancardResponse {
 

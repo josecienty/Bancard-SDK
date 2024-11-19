@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses;
+namespace Idesa\Bancard\Responses;
 
-use HDSSolutions\Bancard\Models\QRExpress;
-use HDSSolutions\Bancard\Models\SupportedClient;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Models\QRExpress;
+use Idesa\Bancard\Models\SupportedClient;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
 
 final class QRGenerateResponse extends Base\BancardResponse implements Contracts\QRGenerateResponse {
 

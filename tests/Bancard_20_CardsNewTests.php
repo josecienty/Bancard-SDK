@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Tests;
+namespace Idesa\Bancard\Tests;
 
 use Exception;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Requests\CardsNewRequest;
-use HDSSolutions\Bancard\Responses\Contracts\CardsNewResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Requests\CardsNewRequest;
+use Idesa\Bancard\Responses\Contracts\CardsNewResponse;
 use PHPUnit\Framework\TestCase;
 
 final class Bancard_20_CardsNewTests extends TestCase {

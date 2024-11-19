@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Contracts;
+namespace Idesa\Bancard\Responses\Contracts;
 
-use HDSSolutions\Bancard\Requests\Contracts\CardsNewRequest;
-use HDSSolutions\Bancard\Requests\Contracts\SingleBuyRequest;
-use HDSSolutions\Bancard\Requests\Contracts\UsersCardsRequest;
-use HDSSolutions\Bancard\Responses\Structs\BancardMessage;
+use Idesa\Bancard\Requests\Contracts\CardsNewRequest;
+use Idesa\Bancard\Requests\Contracts\SingleBuyRequest;
+use Idesa\Bancard\Requests\Contracts\UsersCardsRequest;
+use Idesa\Bancard\Responses\Structs\BancardMessage;
 use Psr\Http\Message\StreamInterface;
 
 interface BancardResponse {

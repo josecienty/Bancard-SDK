@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Models\Base;
+namespace Idesa\Bancard\Models\Base;
 
 abstract class Model {
 

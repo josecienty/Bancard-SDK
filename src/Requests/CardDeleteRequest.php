@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests;
+namespace Idesa\Bancard\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Responses\CardDeleteResponse;
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Responses\CardDeleteResponse;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
 
 final class CardDeleteRequest extends Base\BancardRequest implements Contracts\CardDeleteRequest {
 

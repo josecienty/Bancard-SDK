@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Builders;
+namespace Idesa\Bancard\Builders;
 
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Models\PendingCard;
-use HDSSolutions\Bancard\Requests\CardDeleteRequest;
-use HDSSolutions\Bancard\Requests\CardsNewRequest;
-use HDSSolutions\Bancard\Requests\UsersCardsRequest;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Models\PendingCard;
+use Idesa\Bancard\Requests\CardDeleteRequest;
+use Idesa\Bancard\Requests\CardsNewRequest;
+use Idesa\Bancard\Requests\UsersCardsRequest;
 
 trait CardsRequests {
 

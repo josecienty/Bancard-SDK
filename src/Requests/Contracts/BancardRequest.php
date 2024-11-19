@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests\Contracts;
+namespace Idesa\Bancard\Requests\Contracts;
 
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
 use Psr\Http\Message\StreamInterface;
 
 /**

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Contracts;
+namespace Idesa\Bancard\Responses\Contracts;
 
 interface CardsNewResponse extends BancardResponse {
 

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Builders;
+namespace Idesa\Bancard\Builders;
 
-use HDSSolutions\Bancard\Models\Currency;
-use HDSSolutions\Bancard\Models\PendingPayment;
-use HDSSolutions\Bancard\Requests\QRGenerateRequest;
-use HDSSolutions\Bancard\Requests\QRRevertRequest;
+use Idesa\Bancard\Models\Currency;
+use Idesa\Bancard\Models\PendingPayment;
+use Idesa\Bancard\Requests\QRGenerateRequest;
+use Idesa\Bancard\Requests\QRRevertRequest;
 
 trait QRRequests {
 

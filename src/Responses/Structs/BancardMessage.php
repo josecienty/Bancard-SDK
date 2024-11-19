@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Structs;
+namespace Idesa\Bancard\Responses\Structs;
 
-use HDSSolutions\Bancard\Models\Base\Model;
+use Idesa\Bancard\Models\Base\Model;
 use stdClass;
 
 final class BancardMessage extends Model {

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Services;
+namespace Idesa\Bancard\Services;
 
-use HDSSolutions\Bancard\Responses\QRGenerateResponse;
-use HDSSolutions\Bancard\Responses\QRRevertResponse;
+use Idesa\Bancard\Responses\QRGenerateResponse;
+use Idesa\Bancard\Responses\QRRevertResponse;
 
 trait QR {
 

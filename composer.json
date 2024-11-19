@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HDSSolutions\\Bancard\\": "src/"
+            "Idesa\\Bancard\\": "src/"
         }
     },
     "require-dev": {
@@ -25,7 +25,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "HDSSolutions\\Bancard\\Tests\\": "tests/"
+            "Idesa\\Bancard\\Tests\\": "tests/"
         }
     },
     "scripts": {

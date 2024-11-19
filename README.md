@@ -20,7 +20,7 @@ composer require hds-solutions/bancard-sdk
 ## Usage
 To set your Bancard credentials, use the `Bancard::credentials()` method.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 Bancard::credentials(
     publicKey:  'YOUR_PUBLIC_KEY',
@@ -41,7 +41,7 @@ Bancard::useProduction(config('app.env') === 'production');
 ## Request and Response objects features
 The request and the response objects have some helper methods:
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 $response = Bancard::single_buy(...);
 
@@ -87,8 +87,8 @@ print_r($request->getBody()->getContents());
 ### SingleBuy
 Endpoint used to generate a process ID to call the Bancard `<iframe>` for an one-time payment.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
 
 $singleBuyResponse = Bancard::single_buy(
     shop_process_id: $shop_process_id,
@@ -111,8 +111,8 @@ $process_id = $singleBuyResponse->getProcessId();
 ### SingleBuy Zimple
 Same as above, but for `Zimple` payments.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
 
 $singleBuyResponse = Bancard::single_buy_zimple(
     shop_process_id: $shop_process_id,
@@ -128,8 +128,8 @@ $singleBuyResponse = Bancard::single_buy_zimple(
 ### Customizable requests
 If you need, you can create a pending request and change the values on runtime. This applies to all available requests.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Currency;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Currency;
 
 $singleBuyRequest = Bancard::newSingleBuyRequest(
     shop_process_id: $shop_process_id,
@@ -154,7 +154,7 @@ if ( !$singleBuyRequest->execute()) {
 ### CardsNew
 Endpoint used to generate a process ID to call the Bancard `<iframe>` for card registry.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 $cardsNewResponse = Bancard::card_new(
     user_id:    $user_id,
@@ -171,7 +171,7 @@ $cardsNewResponse->getProcessId();
 ### UsersCards
 Endpoint used to get the registered user cards.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 $usersCardsResponse = Bancard::users_cards(
     user_id: $user_id,
@@ -190,8 +190,8 @@ foreach ($usersCardsResponse->getCards() as $card) {
 ### CardDelete
 Endpoint to remove a registered card. You need an instance of `Card` model obtained from previous request.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Card;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Card;
 
 $cardDeleteResponse = Bancard::card_delete(
     card: $card,
@@ -201,9 +201,9 @@ $cardDeleteResponse = Bancard::card_delete(
 ### Charge
 Endpoint used to make a payment using a registered user card. You need an instance of `Card` model obtained from `Bancard::users_cards()`.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Models\Confirmation;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Models\Confirmation;
 
 $chargeResponse = Bancard::charge(
     card:            $card,
@@ -234,8 +234,8 @@ echo sprintf('Country: %s, Risk Index: %.2F',
 ### Confirmation
 Endpoint to get the confirmation of a payment. Example, in case the above charge request stayed as a pending of confirmation payment.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\Confirmation;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\Confirmation;
 
 $confirmationResponse = Bancard::confirmation(
     shop_process_id: $chargeResponse->getRequest()->getShopProcessId(),
@@ -245,7 +245,7 @@ $confirmationResponse = Bancard::confirmation(
 ### Rollback
 Endpoint to rollback a payment.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 $rollbackResponse = Bancard::rollback(
     shop_process_id: $chargeResponse->getRequest()->getShopProcessId(),
@@ -261,7 +261,7 @@ In order to use VentasQR, you need to set your credentials through the `Bancard:
 
 **⚠ Important: VentasQR is not scoped by `Bancard::useProduction()`, since your assigned domain will define your testing/production environment**.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 Bancard::qr_credentials(
     serviceUrl:     'YOUR_QR_ASSIGNED_DOMAIN',
@@ -275,8 +275,8 @@ Bancard::qr_credentials(
 ### QR Generate
 Endpoint to request a QR Payment.
 ```php
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Models\QRExpress;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Models\QRExpress;
 
 $qrGenerateResponse = Bancard::qr_generate(
     amount:      $amount,
@@ -307,7 +307,7 @@ foreach ($supportedClients as $supportedClient) {
 ### QR Revert
 Endpoint to revert a QR Payment.
 ```php
-use HDSSolutions\Bancard\Bancard;
+use Idesa\Bancard\Bancard;
 
 $qrRevertResponse = Bancard::qr_revert(
     hook_alias: $qrExpress->hook_alias,

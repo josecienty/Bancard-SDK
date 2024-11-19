@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Contracts;
+namespace Idesa\Bancard\Responses\Contracts;
 
-use HDSSolutions\Bancard\Models\Card;
+use Idesa\Bancard\Models\Card;
 
 interface UsersCardsResponse extends BancardResponse {
 

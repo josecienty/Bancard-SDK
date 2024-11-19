@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests;
+namespace Idesa\Bancard\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Responses\UsersCardsResponse;
-use HDSSolutions\Bancard\Responses\Contracts\BancardResponse;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Responses\UsersCardsResponse;
+use Idesa\Bancard\Responses\Contracts\BancardResponse;
 
 final class UsersCardsRequest extends Base\BancardRequest implements Contracts\UsersCardsRequest {
 

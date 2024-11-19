@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses\Base;
+namespace Idesa\Bancard\Responses\Base;
 
 use GuzzleHttp\Psr7\Response;
-use HDSSolutions\Bancard\Models\ProcessStatus;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
-use HDSSolutions\Bancard\Responses\Contracts;
-use HDSSolutions\Bancard\Responses\Structs\BancardMessage;
+use Idesa\Bancard\Models\ProcessStatus;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Responses\Contracts;
+use Idesa\Bancard\Responses\Structs\BancardMessage;
 use JsonException;
 use Psr\Http\Message\StreamInterface;
 

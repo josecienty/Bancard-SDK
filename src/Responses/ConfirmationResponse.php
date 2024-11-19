@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Responses;
+namespace Idesa\Bancard\Responses;
 
-use HDSSolutions\Bancard\Models\Confirmation;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Models\Confirmation;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
 
 final class ConfirmationResponse extends Base\BancardResponse implements Contracts\ConfirmationResponse {
 

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Services;
+namespace Idesa\Bancard\Services;
 
-use HDSSolutions\Bancard\Models\Card;
-use HDSSolutions\Bancard\Responses\Contracts\ChargeResponse;
-use HDSSolutions\Bancard\Responses\Contracts\ConfirmationResponse;
-use HDSSolutions\Bancard\Responses\Contracts\PreauthorizationConfirmResponse;
-use HDSSolutions\Bancard\Responses\Contracts\RollbackResponse;
+use Idesa\Bancard\Models\Card;
+use Idesa\Bancard\Responses\Contracts\ChargeResponse;
+use Idesa\Bancard\Responses\Contracts\ConfirmationResponse;
+use Idesa\Bancard\Responses\Contracts\PreauthorizationConfirmResponse;
+use Idesa\Bancard\Responses\Contracts\RollbackResponse;
 
 trait Transactions {
 

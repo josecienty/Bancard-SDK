@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Requests\Contracts;
+namespace Idesa\Bancard\Requests\Contracts;
 
 /**
  * @property int $user_id

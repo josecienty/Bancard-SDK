@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 
-namespace HDSSolutions\Bancard\Builders;
+namespace Idesa\Bancard\Builders;
 
-use HDSSolutions\Bancard\Bancard;
-use HDSSolutions\Bancard\Requests\Contracts\ConfirmationRequest;
-use HDSSolutions\Bancard\Requests\Contracts\BancardRequest;
-use HDSSolutions\Bancard\Requests\Contracts\CardDeleteRequest;
-use HDSSolutions\Bancard\Requests\Contracts\CardsNewRequest;
-use HDSSolutions\Bancard\Requests\Contracts\ChargeRequest;
-use HDSSolutions\Bancard\Requests\Contracts\PreauthorizationConfirmRequest;
-use HDSSolutions\Bancard\Requests\Contracts\SingleBuyRequest;
-use HDSSolutions\Bancard\Requests\Contracts\RollbackRequest;
-use HDSSolutions\Bancard\Requests\Contracts\UsersCardsRequest;
+use Idesa\Bancard\Bancard;
+use Idesa\Bancard\Requests\Contracts\ConfirmationRequest;
+use Idesa\Bancard\Requests\Contracts\BancardRequest;
+use Idesa\Bancard\Requests\Contracts\CardDeleteRequest;
+use Idesa\Bancard\Requests\Contracts\CardsNewRequest;
+use Idesa\Bancard\Requests\Contracts\ChargeRequest;
+use Idesa\Bancard\Requests\Contracts\PreauthorizationConfirmRequest;
+use Idesa\Bancard\Requests\Contracts\SingleBuyRequest;
+use Idesa\Bancard\Requests\Contracts\RollbackRequest;
+use Idesa\Bancard\Requests\Contracts\UsersCardsRequest;
 
 final class TokenBuilder {
 
